@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>College News Events</title>
+	
+	<style>
+    /* Transition for the mobile menu */
+    nav.mobile-menu {
+      transition: max-height 0.3s ease-in-out;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <header class="p-6 bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+     <h1 class="text-xl font-bold text-indigo-700 flex items-center">
+    <img src="logo.png" alt="Tailwind CSS Logo" class="h-12 mr-2"> <!-- Logo -->
+    Sunflower International School
+</h1>
+
+
+      <!-- Main navigation menu -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-600 hover:text-indigo-700">Home</a>
+        <a href="about.html" class="text-gray-600 hover:text-indigo-700">About Us</a>
+        <a href="courses.html" class="text-gray-600 hover:text-indigo-700">Courses</a>
+        <a href="contact.html" class="text-gray-600 hover:text-indigo-700">Contact</a>
+      </nav>
+      <a href="#" class="hidden md:inline-block bg-indigo-700 text-white py-2 px-4 rounded-lg">Register Now</a>
+
+      <!-- Mobile Menu Icon -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-600">
+          <!-- Hamburger Icon for mobile menu -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <nav id="mobile-nav" class="mobile-menu md:hidden max-h-0">
+      <div class="flex flex-col p-6 space-y-4">
+        <a href="index.html" class="text-gray-600 hover:text-indigo-700">Home</a>
+        <a href="about.html" class="text-gray-600 hover:text-indigo-700">About Us</a>
+        <a href="courses" class="text-gray-600 hover:text-indigo-700">Courses</a>
+        <a href="contact.html" class="text-gray-600 hover:text-indigo-700">Contact</a>
+        <a href="#" class="inline-block bg-indigo-700 text-white py-2 px-4 text-sm sm:text-base md:text-lg lg:text-xl w-32 text-center rounded-md">
+        Register Now</a>
+
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="container mx-auto px-4 py-12 lg:flex lg:items-center lg:justify-between">
+    <div class="lg:w-1/2 space-y-6">
+      <h2 class="text-3xl lg:text-4xl font-bold text-indigo-700">Access 1500+ Online Courses From Top Instructors</h2>
+      <p class="text-gray-600"> We offer a diverse range of courses designed to inspire and challenge students at every level.</p>
+      <a href="contact.html" class="inline-block bg-indigo-700 text-white py-3 px-6 rounded-lg text-lg">Contact us</a>
+    </div>
+    <div class="mt-6 lg:mt-0 lg:w-1/2">
+      <img src="kid.PNG" alt="Instructor" class="rounded-lg mx-auto w-full lg:w-3/4">
+    </div>
+  </section>
+
+	
+</head>
+
+ <!-- Our Courses Section -->
+  <section class="container mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-indigo-700 text-center mb-8">Our Courses</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Course 1 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="english.jpg" alt="Course 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-indigo-700 mb-3">General English</h3>
+          <p class="text-gray-600 mb-4"> This includes core language skills, including reading, writing, speaking, and listening.</p>
+          <a href="#" class="inline-block bg-indigo-700 text-white py-2 px-4 rounded-lg">Enroll Now</a>
+        </div>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="math.jpg" alt="Course 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-indigo-700 mb-3">Mathematics</h3>
+          <p class="text-gray-600 mb-4">The Mathematics curriculum equips students with problem-solving skills and logical thinking</p>
+          <a href="#" class="inline-block bg-indigo-700 text-white py-2 px-4 rounded-lg">Enroll Now</a>
+        </div>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="computer.jpg" alt="Course 3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-indigo-700 mb-3">Computer</h3>
+          <p class="text-gray-600 mb-4"> Students dive into the world of technology, learning programming languages</p>
+          <a href="#" class="inline-block bg-indigo-700 text-white py-2 px-4 rounded-lg">Enroll Now</a>
+        </div>
+      </div>
+
+       <!-- Course 4 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="geo.jpg" alt="Course 4" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-indigo-700 mb-3">Geography</h3>
+          <p class="text-gray-600 mb-4">The study of physical geography, climate, ecosystems, and global patterns</p>
+          <a href="#" class="inline-block bg-indigo-700 text-white py-2 px-4 rounded-lg">Enroll Now</a>
+        </div>
+      </div>
+
+      <!-- Course 5 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="biology.jpg" alt="Course 5" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-indigo-700 mb-3">Biology</h3>
+          <p class="text-gray-600 mb-4">The Biology program introduces students to the wonders of life</p>
+          <a href="#" class="inline-block bg-indigo-700 text-white py-2 px-4 rounded-lg">Enroll Now</a>
+        </div>
+      </div>
+
+      <!-- Course 6 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <img src="chemistry.jpg" alt="Course 6" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-indigo-700 mb-3">Chemistry</h3>
+          <p class="text-gray-600 mb-4">Chemistry delves into the study of matter, its properties, and the changes it undergoes</p>
+          <a href="#" class="inline-block bg-indigo-700 text-white py-2 px-4 rounded-lg">Enroll Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script for toggling the mobile menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    menuBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('max-h-0');
+      mobileNav.classList.toggle('max-h-screen');
+    });
+  </script>
+
+<body class="bg-gray-100">
+
+    <header class="bg-indigo-600 text-white p-4">
+        <h1 class="text-3xl font-bold">College Events</h1>
+    </header>
+
+    <main class="p-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-lg p-4">
+                <div class="flex items-center mb-4">
+                    <div class="h-10 w-10 bg-indigo-600 text-white rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m4 4v-4m0 0V8m0 4l4-4m-4 4l-4-4" />
+                        </svg>
+                    </div>
+                    <h2 class="ml-2 text-xl font-semibold">Career Fair</h2>
+                </div>
+                <p class="text-gray-600">Join us for the annual Career Fair to connect with potential employers.</p>
+                <p class="text-gray-500 mt-2">Date: March 15, 2024</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-4">
+                <div class="flex items-center mb-4">
+                    <div class="h-10 w-10 bg-indigo-600 text-white rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <h2 class="ml-2 text-xl font-semibold">Spring Concert</h2>
+                </div>
+                <p class="text-gray-600">Enjoy an evening of music at our Spring Concert featuring local bands.</p>
+                <p class="text-gray-500 mt-2">Date: April 20, 2024</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-4">
+                <div class="flex items-center mb-4">
+                    <div class="h-10 w-10 bg-indigo-600 text-white rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v8m4-4H8" />
+                        </svg>
+                    </div>
+                    <h2 class="ml-2 text-xl font-semibold">Graduation Ceremony</h2>
+                </div>
+                <p class="text-gray-600">Celebrate the achievements of our graduates at the annual ceremony.</p>
+                <p class="text-gray-500 mt-2">Date: May 25, 2024</p>
+            </div>
+
+            <!-- Add more events as needed -->
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2024 Sunflower International School. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

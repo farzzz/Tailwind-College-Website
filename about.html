@@ -1,0 +1,194 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Courses</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Transition for the mobile menu */
+    nav.mobile-menu {
+      transition: max-height 0.3s ease-in-out;
+      overflow: hidden;
+    }
+
+	
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <header class="p-6 bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold text-indigo-700 flex items-center">
+    <img src="logo.png" alt="Tailwind CSS Logo" class="h-12 mr-2"> <!-- Logo -->
+    Sunflower International School
+    </h1>
+		
+      <!-- Main navigation menu -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-600 hover:text-indigo-700">Home</a>
+        <a href="about.html" class="text-gray-600 hover:text-indigo-700">About Us</a>
+        <a href="courses.html" class="text-gray-600 hover:text-indigo-700">Courses</a>
+        <a href="contact.html" class="text-gray-600 hover:text-indigo-700">Contact</a>
+      </nav>
+      <a href="#" class="hidden md:inline-block bg-indigo-700 text-white py-2 px-4 rounded-lg">Register Now</a>
+
+      <!-- Mobile Menu Icon -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-600">
+          <!-- Hamburger Icon for mobile menu -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <nav id="mobile-nav" class="mobile-menu md:hidden max-h-0">
+      <div class="flex flex-col p-6 space-y-4">
+        <a href="index.html" class="text-gray-600 hover:text-indigo-700">Home</a>
+        <a href="about.html" class="text-gray-600 hover:text-indigo-700">About Us</a>
+        <a href="courses.html" class="text-gray-600 hover:text-indigo-700">Courses</a>
+        <a href="contact.html" class="text-gray-600 hover:text-indigo-700">Contact</a>
+        <a href="#" class="inline-block bg-indigo-700 text-white py-2 px-4 text-sm sm:text-base md:text-lg lg:text-xl w-32 text-center rounded-md">
+        Register Now</a>
+
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="container mx-auto px-4 py-12 lg:flex lg:items-center lg:justify-between">
+    <div class="lg:w-1/2 space-y-6">
+      <h2 class="text-3xl lg:text-4xl font-bold text-indigo-700">Access 1500+ Online Courses From Top Instructors</h2>
+      <p class="text-gray-600">Our dedicated educators work collaboratively to inspire curiosity, foster critical thinking, and encourage creativity in every child.</p>
+      <a href="courses.html" class="inline-block bg-indigo-700 text-white py-3 px-6 rounded-lg text-lg">See All Courses</a>
+    </div>
+    <div class="mt-6 lg:mt-0 lg:w-1/2">
+	<img src="round.PNG" alt="Instructor" class="rounded-lg mx-auto w-full lg:w-1/2">
+
+    </div>
+  </section>
+
+
+
+<!-- About Us Section -->
+  <section class="container mx-auto px-4 py-12">
+    <div class="flex flex-col lg:flex-row items-center">
+      <!-- Image Section -->
+      <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+        <img src="us.jpg" alt="About Us Image" class="w-full h-full object-cover rounded-lg shadow-lg">
+      </div>
+      
+      <!-- Text Section -->
+      <div class="w-full lg:w-1/2 lg:pl-12">
+        <h1 class="text-4xl font-bold text-indigo-700 mb-6">About Us</h1>
+        <p class="text-gray-600 mb-4">
+         Welcome to Sunflower International School, where we are dedicated to fostering a vibrant and inclusive learning environment for students from all walks of life. 
+		 Our school combines academic excellence with a strong commitment to character development, 
+		 ensuring that each student reaches their full potential.
+        </p>
+        <p class="text-gray-600 mb-4">
+         At Sunflower International School, we believe in the power of education to shape future leaders. 
+		 Our experienced educators guide students through engaging and dynamic lessons, 
+		 encouraging curiosity and a lifelong love for learning.
+        </p>
+        <p class="text-gray-600">
+          Sunflower International School is more than just a place of learning—it's a community where students grow, dream, and achieve. Together, we cultivate bright futures, one student at a time.
+        </p>
+      </div>
+    </div>
+  </section>
+
+ <!-- Why Choose Us Section -->
+  <section class="container mx-auto py-16 px-4">
+    <div class="text-center mb-10">
+             <h1 class="text-4xl font-bold text-indigo-700 mb-6">Why Choose Us</h1>
+      <p class="text-gray-600 mt-4">
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Left Column -->
+      <div class="flex items-start space-x-4">
+      <span class="text-4xl text-blue-500 custom-tick">&#9733;</span>
+
+
+
+        <div>
+          <h4 class="text-xl font-semibold text-gray-800">Exceptional Learning</h4>
+          <p class="text-gray-600">We believe in providing an exceptional learning experience for every student. Here's why Enlight School is the right choice for your child's future.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4">
+       <span class="text-4xl text-blue-500 custom-tick">&#9733;</span>
+
+
+        <div>
+          <h4 class="text-xl font-semibold text-gray-800">Experienced Educators</h4>
+          <p class="text-gray-600">Our teachers are highly qualified and passionate about educating the next generation.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4">
+       <span class="text-4xl text-blue-500 custom-tick">&#9733;</span>
+        <div>
+          <h4 class="text-xl font-semibold text-gray-800">Holistic Development</h4>
+          <p class="text-gray-600">We focus on the overall development of students through academics, sports, and extracurricular activities.</p>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="flex items-start space-x-4">
+       <span class="text-4xl text-blue-500 custom-tick">&#9733;</span>
+        <div>
+          <h4 class="text-xl font-semibold text-gray-800">Modern Facilities</h4>
+          <p class="text-gray-600">Our state-of-the-art classrooms, science labs, and technology integration foster a great learning environment.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4">
+      <span class="text-4xl text-blue-500 custom-tick">&#9733;</span>
+        <div>
+          <h4 class="text-xl font-semibold text-gray-800">Individual Attention</h4>
+          <p class="text-gray-600">We maintain small class sizes to ensure each student gets the attention they deserve.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4">
+      <span class="text-4xl text-blue-500 custom-tick">&#9733;</span>
+        <div>
+          <h4 class="text-xl font-semibold text-gray-800">Strong Community</h4>
+          <p class="text-gray-600">We believe in fostering a supportive and inclusive community among students, staff, and parents.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- Script for toggling the mobile menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    menuBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('max-h-0');
+      mobileNav.classList.toggle('max-h-screen');
+    });
+  </script>
+
+
+ <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Sunflower International School. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

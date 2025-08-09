@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>College News Events</title>
+	
+	<style>
+    /* Transition for the mobile menu */
+    nav.mobile-menu {
+      transition: max-height 0.3s ease-in-out;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <header class="p-6 bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+     <h1 class="text-xl font-bold text-indigo-700 flex items-center">
+    <img src="logo.png" alt="Tailwind CSS Logo" class="h-12 mr-2"> <!-- Logo -->
+    Sunflower International School
+</h1>
+
+
+      <!-- Main navigation menu -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-gray-600 hover:text-indigo-700">Home</a>
+        <a href="about.html" class="text-gray-600 hover:text-indigo-700">About Us</a>
+        <a href="courses.html" class="text-gray-600 hover:text-indigo-700">Courses</a>
+        <a href="contact.html" class="text-gray-600 hover:text-indigo-700">Contact</a>
+      </nav>
+      <a href="#" class="hidden md:inline-block bg-indigo-700 text-white py-2 px-4 rounded-lg">Register Now</a>
+
+      <!-- Mobile Menu Icon -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-600">
+          <!-- Hamburger Icon for mobile menu -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <nav id="mobile-nav" class="mobile-menu md:hidden max-h-0">
+      <div class="flex flex-col p-6 space-y-4">
+        <a href="index.html" class="text-gray-600 hover:text-indigo-700">Home</a>
+        <a href="about.html" class="text-gray-600 hover:text-indigo-700">About Us</a>
+        <a href="courses.html" class="text-gray-600 hover:text-indigo-700">Courses</a>
+        <a href="contact.html" class="text-gray-600 hover:text-indigo-700">Contact</a>
+        <a href="#" class="inline-block bg-indigo-700 text-white py-2 px-4 text-sm sm:text-base md:text-lg lg:text-xl w-32 text-center rounded-md">
+        Register Now</a>
+
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="container mx-auto px-4 py-12 lg:flex lg:items-center lg:justify-between">
+    <div class="lg:w-1/2 space-y-6">
+      <h2 class="text-3xl lg:text-4xl font-bold text-indigo-700">Access 1500+ Online Courses From Top Instructors</h2>
+      <p class="text-gray-600">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+      <a href="courses.html" class="inline-block bg-indigo-700 text-white py-3 px-6 rounded-lg text-lg">See All Courses</a>
+    </div>
+    <div class="mt-6 lg:mt-0 lg:w-1/2">
+      <img src="kid.PNG" alt="Instructor" class="rounded-lg mx-auto w-full lg:w-3/4">
+    </div>
+  </section>
+
+	
+</head>
+
+<body>
+
+
+<body class="bg-gray-100">
+
+    <!-- Container -->
+    <div class="container mx-auto py-10 px-4 lg:px-0">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+
+            <!-- Contact Info Section (Image) -->
+            <div class="w-full lg:w-1/2">
+                <img src="bag.jpg" alt="Contact Image" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="w-full lg:w-1/2 bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-indigo-700 text-center mb-8">Contact us</h2>
+                <form action="#" method="POST" class="space-y-4">
+                    <!-- Name Field -->
+                    <div>
+                        <label for="name" class="block text-lg font-medium text-gray-700">Your Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="John Doe">
+                    </div>
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email" class="block text-lg font-medium text-gray-700">Email Address</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="example@email.com">
+                    </div>
+                    <!-- Message Field -->
+                    <div>
+                        <label for="message" class="block text-lg font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="5" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Your message..."></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <div>
+                       <button type="submit" class="w-full py-3 px-6 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50">
+                                      Send Message
+                                        </button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+  <!-- Script for toggling the mobile menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    menuBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('max-h-0');
+      mobileNav.classList.toggle('max-h-screen');
+    });
+  </script>
+
+
+
+
+
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2024 Sunflower International School. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
